@@ -1,6 +1,7 @@
 //36. Valid Anagram
-import java.util.*;
 
 public class Q36 {
-    
+    public static void main(String[] args) {
+        
+    }
 }
