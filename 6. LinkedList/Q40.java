@@ -27,7 +27,7 @@ public class Q40 {
   static Node arrayToList(int arr[]) {
       Node head = new Node(arr[0]);
       Node temp = head;
-      for(int i = 0; i<arr.length;i++){
+      for(int i = 1; i<arr.length;i++){
         Node n = new Node(arr[i]);
         temp.next = n;
         temp = n;
