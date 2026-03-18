@@ -42,20 +42,20 @@ public class Q48 {
     }
 
     public static void main(String[] args){
-        Scanner sc = new Scanner(System.in);
+        try (Scanner sc = new Scanner(System.in)) {
+            int n = sc.nextInt();
+            Node head = null;
 
-        int n = sc.nextInt();
-        Node head = null;
+            for(int i = 0; i < n; i++){
+                head = insert(head, sc.nextInt());
+            }
 
-        for(int i = 0; i < n; i++){
-            head = insert(head, sc.nextInt());
+            int key = sc.nextInt();
+
+            printlist(head);
+
+            boolean found = searchKey(head, key);
+            System.out.println(found);
         }
-
-        int key = sc.nextInt();
-
-        printlist(head);
-
-        boolean found = searchKey(head, key);
-        System.out.println(found);
     }
 }
