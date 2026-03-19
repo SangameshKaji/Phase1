@@ -1,18 +1,16 @@
 //41. Insert node at Head Position of Linked list
 import java.util.*;
 
-class Node {
-    int data;
-    Node next;
-
-    Node(int data){
-        this.data = data;
-        this.next = null;
-    }
-}
-
 public class Q43 {
+    static class Node {
+        int data;
+        Node next;
 
+        Node(int data){
+            this.data = data;
+            this.next = null;
+        }
+    }
     static Node insertInMiddle(Node head, int x) {
         Node newNode = new Node(x);
         if(head == null) return newNode;

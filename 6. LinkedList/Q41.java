@@ -1,15 +1,15 @@
 //41. Insert node at Head Position of Linked list
 import java.util.*;
 
-class Node{
-    int data;
-    Node next;
-    Node(int data){
-        this.data = data;
-        this.next = null;
-    }
-}
 public class Q41 {
+    static class Node{
+        int data;
+        Node next;
+        Node(int data){
+            this.data = data;
+            this.next = null;
+        }
+    }
     static Node insert(int data, Node head){
         Node newNode = new Node(data);
         newNode.next = head;
